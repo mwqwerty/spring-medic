@@ -1,0 +1,12 @@
+GET http://localhost:8080/api/customer/check?name=qwerty
+
+###
+GET http://localhost:8080/api/customer/
+Accept: application/json
+
+###
+POST http://localhost:8080/api/customer/save
+Content-Type: application/json
+
+{"name": "qwery","password":"qwerty","email": "qwert2y@gmail.com"}
+

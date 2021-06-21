@@ -1,0 +1,16 @@
+services:
+  api_service:
+    build: .
+    restart: always
+    ports:
+      - 8080:8080
+    links:
+      - mongo_db
+
+  mongo_db:
+    image: mongo
+    restart: always
+    volumes:
+    - database:/data/db
+    ports:
+      - 27017:27017
